@@ -8,8 +8,5 @@ document.addEventListener("DOMContentLoaded", () => {
         if (karel.isOnBeeper()) {
             karel.pickBeeper();
         }
-        if (i < 5) {
-            karel.move();
-        }
     }
 });
