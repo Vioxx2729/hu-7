@@ -7,9 +7,11 @@ document.addEventListener("DOMContentLoaded", () => {
     for (let i = 0; i < 5; i++) {
         karel.move();
 
-        // alle Beeper auf diesem Feld einsammeln
-        while (karel.isOnBeeper()) {
+        if (karel.isOnBeeper()){
             karel.pickBeeper();
+        }
+        if (i < 5){
+            karel.move();
         }
     }
 });

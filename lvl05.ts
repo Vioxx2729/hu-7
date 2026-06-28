@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     const karel = new Karel();
 
-    karel.loadLevel05("b");
+    karel.loadLevel05("a");
 
     karel.move();
     karel.move();
