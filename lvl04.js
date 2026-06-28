@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
         karel.turnLeft();
         karel.move();
         karel.turnLeft();
+        karel.move();
     }
     else {
         // Oberer Weg ist frei -> geradeaus

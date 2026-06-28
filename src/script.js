@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const meinLevel = 3;
     if (meinLevel === 3) {
         karel.loadLevel03("a");
-        for (let i = 0; i < 4; i++) {
+        for (let i = 0; i < 5; i++) {
             karel.move();
             if (karel.isOnBeeper())
                 karel.pickBeeper();

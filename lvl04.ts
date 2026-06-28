@@ -24,6 +24,8 @@ document.addEventListener("DOMContentLoaded", () => {
         karel.move();
 
         karel.turnLeft();
+        karel.move();
+
     } else {
         // Oberer Weg ist frei -> geradeaus
         karel.move();

@@ -4,16 +4,21 @@ const startInput = document.getElementById("start");
 const endeInput = document.getElementById("ende");
 const tabelle = document.getElementById("tabelle");
 btn.addEventListener("click", () => {
-    const start = Number(startInput.value);
-    const ende = Number(endeInput.value);
-    // Alte Tabelleninhalte löschen
-    tabelle.innerHTML = "";
-    // Eingabe prüfen
-    if (isNaN(start) || isNaN(ende)) {
+    // Prüfen, ob beide Felder ausgefüllt sind
+    if (startInput.value.trim() === "" || endeInput.value.trim() === "") {
         alert("Bitte zwei Zahlen eingeben.");
         return;
     }
-    // Zahlen von Start bis Ende ausgeben
+    const start = Number(startInput.value);
+    const ende = Number(endeInput.value);
+    // Tabelle leeren
+    tabelle.innerHTML = "";
+    // Optional: prüfen, ob Start größer als Ende ist
+    if (start > ende) {
+        alert("Der Startwert muss kleiner oder gleich dem Endwert sein.");
+        return;
+    }
+    // Tabelle füllen
     for (let x = start; x <= ende; x++) {
         const zeile = document.createElement("tr");
         const tdX = document.createElement("td");

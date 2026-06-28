@@ -22,8 +22,7 @@ button.addEventListener("click", () => {
         const rabatt = betrag * 0.05;
         const endpreis = betrag - rabatt;
 
-        ausgabe.textContent =
-            `Rabatt: 5 %
+        ausgabe.textContent = `Rabatt: 5 %
 Rabattbetrag: ${rabatt.toFixed(2)} €
 Endpreis: ${endpreis.toFixed(2)} €`;
 
